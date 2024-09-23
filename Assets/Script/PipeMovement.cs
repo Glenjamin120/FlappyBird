@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PipeMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private float _speed = 0.65f;
+    private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    private void Update()
     {
-        
+        transform.position += Vector3.left * _speed * Time.deltaTime;
     }
 }
